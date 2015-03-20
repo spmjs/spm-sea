@@ -79,47 +79,6 @@ describe('lib/index.js', function() {
     assert(dest, join(fixtures, '../expected/normal-ignore'));
   });
 
-  it('normal standalone', function* () {
-    yield build({
-      cwd: join(fixtures, 'normal'),
-      dest: dest,
-      include: 'standalone',
-      install: false
-    });
-    assert(dest, join(fixtures, '../expected/normal-standalone'));
-  });
-
-  it('normal standalone with `--standalone`', function* () {
-    yield build({
-      cwd: join(fixtures, 'normal'),
-      dest: dest,
-      standalone: true,
-      install: false
-    });
-    assert(dest, join(fixtures, '../expected/normal-standalone'));
-  });
-
-  it('normal standalone ignore', function* () {
-    yield build({
-      cwd: join(fixtures, 'normal'),
-      dest: dest,
-      ignore: 'type',
-      include: 'standalone',
-      install: false
-    });
-    assert(dest, join(fixtures, '../expected/normal-standalone-ignore'));
-  });
-
-  it('normal umd', function* () {
-    yield build({
-      cwd: join(fixtures, 'normal'),
-      dest: dest,
-      include: 'umd',
-      install: false
-    });
-    assert(dest, join(fixtures, '../expected/normal-umd'));
-  });
-
   it('normal empty idleading', function* () {
     yield build({
       cwd: join(fixtures, 'normal'),
