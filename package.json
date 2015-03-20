@@ -29,7 +29,7 @@
     "multipipe": "~0.1.2",
     "rimraf": "~2.2.8",
     "scripts-hook": "~0.1.0",
-    "spm-client": "~0.2.7",
+    "spm-client": "~0.4.0",
     "spm-log": "~0.1.1",
     "spmrc": "~1.2.0",
     "step.js": "~2.0.5",
