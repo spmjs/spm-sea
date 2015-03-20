@@ -4,7 +4,7 @@
 
 require('colorful').colorful();
 require('gnode');
-require('6to5/register')({
+require('babel-core/register')({
   ignore: '',
   only: /scripts-hook\/_index/
 });
@@ -23,7 +23,7 @@ program
   .option('-o, --output-file <file>', 'output file')
   .option('-f, --force', 'force to clean dest directory first')
   .option('-r, --registry <url>', 'registry url of yuan server')
-  .option('--sea <sea>', 'file include mode with seajs, optional: self, relative, all')
+  .option('--include <include>', 'file include mode with seajs, optional: self, relative, all')
   .option('--global <global>', 'replace package name to global variable, format jquery:$,underscore:_')
   .option('--ignore <ignore>', 'determine which id will not be transported')
   .option('--skip <skip>', 'determine which id will not be parsed when analyse')
@@ -64,7 +64,6 @@ var args = {
   outputFile: program.outputFile,
 
   include: program.include,
-  sea: program.sea,
   ignore: program.ignore,
   global: program.global,
   skip: program.skip,
