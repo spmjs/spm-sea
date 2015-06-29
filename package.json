@@ -1,6 +1,6 @@
 {
   "name": "spm-sea",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SPM project bundler in seajs.",
   "main": "lib/index",
   "dependencies": {
